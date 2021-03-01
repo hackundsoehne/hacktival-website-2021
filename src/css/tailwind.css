@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/RussoOne-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Inter-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Inter-Medium.ttf')  format('truetype');
+}
