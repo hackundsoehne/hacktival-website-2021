@@ -4,7 +4,8 @@
   "description": "Website for the Hacktival 2021",
   "scripts": {
     "build": "tailwindcss-cli build ./src/css/tailwind.css -o ./build/css/styles.css",
-    "start": "browser-sync start -s 'src' --ss 'build' -f 'src' 'build'"
+    "start": "browser-sync start -s 'src' --ss 'build' -f 'src' 'build'",
+	"format": "prettier --write src/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "autoprefixer": "^10.2.4",
     "browser-sync": "^2.26.14",
     "postcss": "^8.2.6",
+    "prettier": "2.2.1",
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
