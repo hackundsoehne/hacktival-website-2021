@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Website for the Hacktival 2021",
   "scripts": {
-    "build": "tailwindcss-cli build ./src/css/tailwind.css -o ./src/build/styles.css",
-	"start": "browser-sync start -s 'src' --ss 'build' -f 'src' 'build'"
+    "build": "tailwindcss-cli build ./src/css/tailwind.css -o ./build/css/styles.css",
+    "start": "browser-sync start -s 'src' --ss 'build' -f 'src' 'build'"
   },
   "repository": {
     "type": "git",
