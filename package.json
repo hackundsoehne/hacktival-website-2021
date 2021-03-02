@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tailwindcss-cli build ./src/css/tailwind.css -o ./build/css/styles.css",
     "start": "browser-sync start -s 'src' --ss 'build' -f 'src' 'build'",
-	"format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "browser-sync": "^2.26.14",
+    "husky": "^5.1.2",
     "postcss": "^8.2.6",
     "prettier": "2.2.1",
     "tailwindcss": "^2.0.3"
