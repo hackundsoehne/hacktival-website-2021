@@ -1,116 +1,292 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/styles.css" rel="stylesheet">
-</head>
+  <body class="min-h-screen flex flex-col font-inter">
+    <nav>Navigation</nav>
 
-<body class="min-h-screen flex flex-col font-inter">
-  <nav>
-    Navigation
-  </nav>
+    <main class="flex-1">
+      <section
+        class="bg-yellow-100 rounded-xl m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20"
+      >
+        <h2 class="uppercase text-gray-500">About</h2>
+        <h3 class="text-6xl font-russo">What is Hacktival?</h3>
+        <p class="max-w-5xl mt-10">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quo,
+          officiis impedit praesentium explicabo eius. Consequuntur earum cum
+          deleniti nihil maiores fugiat unde similique sequi. Voluptatem eveniet
+          ex reprehenderit, soluta porro officia provident, beatae, a veniam in
+          dicta! Eligendi voluptatum temporibus, nulla maiores alias iste rerum
+          laborum numquam est neque ullam ab consequatur veritatis eius eveniet
+          vero aspernatur.
+        </p>
+      </section>
 
-  <main class="flex-1">
-    <section class="bg-yellow-100 rounded-xl m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20">
-      <h2 class="uppercase text-gray-500">About</h2>
-      <h3 class="text-6xl font-russo">What is Hacktival?</h3>
-      <p class="max-w-5xl mt-10">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quo, officiis impedit praesentium explicabo
-        eius. Consequuntur earum cum deleniti nihil maiores fugiat unde similique sequi. Voluptatem eveniet ex
-        reprehenderit, soluta porro officia provident, beatae, a veniam in dicta! Eligendi voluptatum temporibus, nulla
-        maiores alias iste rerum laborum numquam est neque ullam ab consequatur veritatis eius eveniet vero aspernatur.
-      </p>
-    </section>
-
-    <section class="p-20 bg-blue-100 rounded-xl m-12">
-      <div class="flex">
-        <div class="flex-1"></div>
-        <div class="max-w-5xl ml-auto flex flex-col">
-          <h2 class="uppercase text-gray-500 inline-block">Categories</h2>
-          <h3 class="text-6xl font-russo inline-block">Choose your interest area</h3>
+      <section class="p-20 bg-blue-100 rounded-xl m-12">
+        <div class="flex">
+          <div class="flex-1"></div>
+          <div class="max-w-5xl ml-auto flex flex-col">
+            <h2 class="uppercase text-gray-500 inline-block">Categories</h2>
+            <h3 class="text-6xl font-russo inline-block">
+              Choose your interest area
+            </h3>
+          </div>
         </div>
+        <article class="max-w-2xl flex flex-col items-start mt-24">
+          <div class="flex rounded-md bg-white py-1 px-4 items-center shadow">
+            <div class="bg-blue-600 w-1 h-5 inline-block mr-2"></div>
+            <h4 class="font-russo text-lg">Category Title</h4>
+          </div>
+          <b class="text-sm mt-1">Sponsor Name</b>
+          <p class="text-sm mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
+            provident nobis. Corporis similique obcaecati, commodi earum aperiam
+            enim ipsam ullam in magnam porro odit cumque deserunt? Inventore
+            enim officia illum.
+          </p>
+          <ul class="text-sm mt-3 space-y-2">
+            <li class="flex items-center">
+              <div
+                class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"
+              ></div>
+              1st place: 4x Bbox 360°
+            </li>
+            <li class="flex items-center">
+              <div
+                class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"
+              ></div>
+              2st place: 4x Bbox 360°
+            </li>
+            <li class="flex items-center">
+              <div
+                class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"
+              ></div>
+              3st place: 4x Bbox 360°
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="m-12 p-24 bg-gray-800 rounded-xl">
+        <div class="flex">
+          <div class="flex-1"></div>
+          <div>
+            <h2 class="uppercase text-white text-lg">Events</h2>
+            <h3 class="text-white text-6xl font-extrabold">And More...</h3>
+          </div>
+          <div class="w-32"></div>
+        </div>
+
+        <div class="flex-auto">
+          <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+          <div class="flex flex-row mt-2 mb-2 items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+              class="w-12 h-12 rounded-lg mr-3"
+            />
+            <div class="flex flex-col text-white">
+              <h4 class="font-bold text-xl">Tech talk title</h4>
+              <h5 class="text-lg">Speaker Name</h5>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+            lobortis ex lacus, vel tincidunt nisl malesuada vel. Suspendisse at
+            lorem et diam tristique mattis. Curabitur finibus vel felis eu
+            fringilla. Aliquam maximus finibus nibh, vitae rhoncus enim aliquam
+            ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            in enim metus.
+          </p>
+        </div>
+
+        <div class="flex-auto mt-20">
+          <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+          <div class="flex flex-row mt-2 mb-2 items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+              class="w-12 h-12 rounded-lg mr-3"
+            />
+            <div class="flex flex-col text-white">
+              <h4 class="font-bold text-xl">Tech talk title</h4>
+              <h5 class="text-lg">Speaker Name</h5>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+            lobortis ex lacus, vel tincidunt nisl malesuada vel. Suspendisse at
+            lorem et diam tristique mattis. Curabitur finibus vel felis eu
+            fringilla. Aliquam maximus finibus nibh, vitae rhoncus enim aliquam
+            ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            in enim metus.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-y-16 gap-x-12 mt-20">
+          <div class="flex-auto">
+            <div class="flex flex-row mt-2 mb-2 items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+                class="w-12 h-12 rounded-lg mr-3"
+              />
+              <div class="flex flex-col text-white">
+                <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+                <h4 class="font-bold text-xl">Mini event name</h4>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+              lobortis ex lacus, vel tincidunt nisl malesuada vel. Suspendisse
+              at lorem et diam tristique mattis. Curabitur finibus vel felis eu
+              fringilla.
+            </p>
+          </div>
+
+          <div class="flex-auto">
+            <div class="flex flex-row mt-2 mb-2 items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+                class="w-12 h-12 rounded-lg mr-3"
+              />
+              <div class="flex flex-col text-white">
+                <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+                <h4 class="font-bold text-xl">Mini event name</h4>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+              lobortis ex lacus, vel tincidunt nisl malesuada vel. Suspendisse
+              at lorem et diam tristique mattis. Curabitur finibus vel felis eu
+              fringilla. Aliquam maximus finibus nibh, vitae rhoncus enim
+              aliquam ut. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Proin in enim metus.
+            </p>
+          </div>
+
+          <div class="flex-auto">
+            <div class="flex flex-row mt-2 mb-2 items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+                class="w-12 h-12 rounded-lg mr-3"
+              />
+              <div class="flex flex-col text-white">
+                <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+                <h4 class="font-bold text-xl">Mini event name</h4>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+              lobortis ex lacus, vel tincidunt nisl malesuada vel. Suspendisse
+              at lorem et diam tristique mattis. Curabitur finibus vel felis eu
+              fringilla. Aliquam maximus finibus nibh, vitae rhoncus enim
+              aliquam ut. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Proin in enim metus.
+            </p>
+          </div>
+
+          <div class="flex-auto">
+            <div class="flex flex-row mt-2 mb-2 items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+                class="w-12 h-12 rounded-lg mr-3"
+              />
+              <div class="flex flex-col text-white">
+                <span class="text-gray-400">14:30 - 15:00, 03-20-2020</span>
+                <h4 class="font-bold text-xl">Mini event name</h4>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              faucibus ultrices augue, eget tempus metus cursus at. Curabitur
+              lobortis ex lacus, vel tincidunt nisl malesuada vel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20 bg-yellow-100 rounded-xl"
+      >
+        <h2 class="uppercase text-lg text-gray-700">Judges</h2>
+        <h3 class="text-6xl font-extrabold font-russo">Judges</h3>
+        <div class="pt-12 xl:pt-20 flex justify-center items-center">
+          <div
+            class="grid gap-6 md:gap-8 xl:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
+          >
+            <div
+              class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1"
+            >
+              <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
+              <div class="text-xl font-bold">Judge name</div>
+              <div class="text-lg text-gray-700">Job title/ role</div>
+              <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
+              <div class="text-gray-700">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1"
+            >
+              <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
+              <div class="text-xl font-bold">Judge name</div>
+              <div class="text-lg text-gray-700">Job title/ role</div>
+              <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
+              <div class="text-gray-700">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1"
+            >
+              <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
+              <div class="text-xl font-bold">Judge name</div>
+              <div class="text-lg text-gray-700">Job title/ role</div>
+              <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
+              <div class="text-gray-700">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1"
+            >
+              <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
+              <div class="text-xl font-bold">Judge name</div>
+              <div class="text-lg text-gray-700">Job title/ role</div>
+              <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
+              <div class="text-gray-700">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-indigo-200 px-12 py-6 flex flex-row justify-between">
+      <div class="uppercase font-extrabold text-lg">Hacktival</div>
+      <div class="uppercase text-xl text-gray-700">
+        &commat;Copyright &commat;2021 Hacktival
       </div>
-      <article class="max-w-2xl flex flex-col items-start mt-24">
-        <div class="flex rounded-md bg-white py-1 px-4 items-center shadow">
-          <div class="bg-blue-600 w-1 h-5 inline-block mr-2"></div>
-          <h4 class="font-russo text-lg">Category Title</h4>
-        </div>
-        <b class="text-sm mt-1">Sponsor Name</b>
-        <p class="text-sm mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, provident nobis.
-          Corporis
-          similique
-          obcaecati, commodi earum aperiam enim ipsam ullam in magnam porro odit cumque deserunt? Inventore enim officia
-          illum.</p>
-        <ul class="text-sm mt-3 space-y-2">
-          <li class="flex items-center">
-            <div class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"></div> 1st place: 4x Bbox 360°
-          </li>
-          <li class="flex items-center">
-            <div class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"></div> 2st place: 4x Bbox 360°
-          </li>
-          <li class="flex items-center">
-            <div class="bg-blue-600 w-1 h-1 rounded-md inline-block mr-1.5"></div> 3st place: 4x Bbox 360°
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20 bg-yellow-100 rounded-xl">
-      <h2 class="uppercase text-lg text-gray-700">Judges</h2>
-      <h3 class="text-6xl font-extrabold font-russo">Judges</h3>
-      <div class="pt-12 xl:pt-20 flex justify-center items-center">
-        <div class="grid gap-6 md:gap-8 xl:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-          <div class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1">
-            <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
-            <div class="text-xl font-bold">Judge name</div>
-            <div class="text-lg text-gray-700">Job title/ role</div>
-            <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
-            <div class="text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore.</div>
-          </div>
-
-          <div class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1">
-            <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
-            <div class="text-xl font-bold">Judge name</div>
-            <div class="text-lg text-gray-700">Job title/ role</div>
-            <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
-            <div class="text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore.</div>
-          </div>
-
-          <div class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1">
-            <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
-            <div class="text-xl font-bold">Judge name</div>
-            <div class="text-lg text-gray-700">Job title/ role</div>
-            <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
-            <div class="text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore.</div>
-          </div>
-
-          <div class="bg-white rounded-xl max-w-full w-64 px-6 py-8 text-center shadow-md space-y-1">
-            <img class="inline-block w-24 rounded-full" src="img/lenna.png" />
-            <div class="text-xl font-bold">Judge name</div>
-            <div class="text-lg text-gray-700">Job title/ role</div>
-            <div class="inline-block w-6 border-t-2 border-indigo-600"></div>
-            <div class="text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore.</div>
-          </div>
-        </div>
+      <div class="flex flex-row items-center space-x-6">
+        <a href="#"><img class="w-6" src="img/facebook.svg" /></a>
+        <a href="#"><img class="w-6" src="img/instagram.svg" /></a>
+        <a href="#"><img class="w-6" src="img/twitter.svg" /></a>
       </div>
-    </section>
-  </main>
-
-  <footer class="bg-indigo-200 px-12 py-6 flex flex-row justify-between">
-    <div class="uppercase font-extrabold text-lg">Hacktival</div>
-    <div class="uppercase text-xl text-gray-700">&commat;Copyright &commat;2021 Hacktival</div>
-    <div class="flex flex-row items-center space-x-6">
-      <a href="#"><img class="w-6" src="img/facebook.svg" /></a>
-      <a href="#"><img class="w-6" src="img/instagram.svg" /></a>
-      <a href="#"><img class="w-6" src="img/twitter.svg" /></a>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
