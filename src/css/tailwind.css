@@ -22,3 +22,15 @@
   font-weight: 500;
   src: url("../fonts/Inter-Medium.ttf") format("truetype");
 }
+
+@layer components {
+  .section {
+    @apply m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20 rounded-xl;
+  }
+  .section-title {
+    @apply uppercase text-lg text-gray-700;
+  }
+  .section-heading {
+    @apply text-6xl font-extrabold font-russo;
+  }
+}
