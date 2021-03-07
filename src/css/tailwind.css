@@ -37,36 +37,72 @@
   .category {
     @apply max-w-xl flex flex-col items-start mt-12 lg:mt-24 relative;
   }
-
   .category-title {
     @apply flex rounded-md bg-white py-1 px-4 items-center shadow;
   }
-
   .category-title div {
     @apply bg-blue w-1 h-5 inline-block mr-2;
   }
-
   .category-title h4 {
     @apply font-russo text-lg;
   }
-
   .category h5 {
     @apply text-sm mt-1 font-bold;
   }
-
   .category p {
     @apply text-sm mt-3;
   }
-
   .category ul {
     @apply text-sm mt-3 space-y-2;
   }
-
   .category ul li {
     @apply flex items-center;
   }
-
   .category ul li div {
     @apply bg-blue w-1 h-1 rounded-md inline-block mr-1.5;
+  }
+
+  /* Fancy FAQ accordions with +/- buttons */
+  summary {
+    list-style: none;
+    @apply flex items-center cursor-pointer;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: "+";
+    @apply ml-auto text-4xl text-blue-3;
+  }
+  details[open] summary::after {
+    content: "-";
+    @apply ml-auto text-4xl text-blue-3;
+  }
+
+  /* FAQ accordion item styles */
+  .accordion-item {
+    @apply pb-6 mb-6 border-b-2 border-blue-2;
+  }
+  .accordion-item:last-child {
+    @apply mb-5;
+  }
+  .accordion-item h4 {
+    @apply text-xl font-bold;
+  }
+  details[open] summary {
+    @apply mb-4;
+  }
+  /* TODO: Check if we can just use this for the entire website */
+  .accordion-item .accordion-content ul {
+    list-style: none;
+  }
+  .accordion-item .accordion-content ul li {
+    @apply font-bold;
+  }
+  .accordion-item .accordion-content ul li::before {
+    content: "\2022"; /* \2022 is unicode for a bullet */
+    display: inline-block;
+    width: 1em;
+    @apply font-bold text-blue-3;
   }
 }
