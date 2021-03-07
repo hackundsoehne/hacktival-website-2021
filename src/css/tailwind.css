@@ -62,6 +62,61 @@
     @apply bg-blue w-1 h-1 rounded-md inline-block mr-1.5;
   }
 
+  /* Events section */
+  /* Tech talks */
+  .tech-talk-subsection {
+    @apply mb-20;
+  }
+  .tech-talk {
+    @apply flex-auto mb-20;
+  }
+  .tech-talk:last-child {
+    @apply mb-0;
+  }
+  .tech-talk-date {
+    @apply text-gray-3;
+  }
+  .tech-talk-description {
+    @apply flex flex-row mt-2 mb-2 items-center;
+  }
+  .tech-talk-description img {
+    @apply w-12 h-12 rounded-lg mr-3;
+  }
+  .tech-talk-description div {
+    @apply flex flex-col;
+  }
+  .tech-talk-description div h4 {
+    @apply font-bold text-xl;
+  }
+  .tech-talk-description div h5 {
+    @apply text-lg;
+  }
+  /* Mini events */
+  .mini-event-subsection {
+    @apply lg:grid lg:grid-cols-2 lg:gap-y-16 lg:gap-x-12;
+  }
+  .mini-event {
+    @apply flex-auto mb-20 lg:mb-0;
+  }
+  .mini-event:last-child {
+    @apply mb-0;
+  }
+  .mini-event-description {
+    @apply flex flex-row mt-2 mb-2 items-center;
+  }
+  .mini-event-description img {
+    @apply w-12 h-12 rounded-lg mr-3;
+  }
+  .mini-event-description div {
+    @apply flex flex-col;
+  }
+  .mini-event-description div span {
+    @apply text-gray-3;
+  }
+  .mini-event-description div h4 {
+    @apply font-bold text-xl;
+  }
+
   /* Fancy FAQ accordions with +/- buttons */
   summary {
     list-style: none;
