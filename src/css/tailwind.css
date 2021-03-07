@@ -80,10 +80,10 @@
     @apply flex flex-row mt-2 mb-2 items-center;
   }
   .tech-talk-description img {
-    @apply w-12 h-12 rounded-lg mr-3;
+    @apply rounded-lg relative -left-2;
   }
   .tech-talk-description div {
-    @apply flex flex-col;
+    @apply flex flex-col relative -top-1;
   }
   .tech-talk-description div h4 {
     @apply font-bold text-xl;
@@ -105,10 +105,10 @@
     @apply flex flex-row mt-2 mb-2 items-center;
   }
   .mini-event-description img {
-    @apply w-12 h-12 rounded-lg mr-3;
+    @apply rounded-lg relative -left-2;
   }
   .mini-event-description div {
-    @apply flex flex-col;
+    @apply flex flex-col relative -top-1;
   }
   .mini-event-description div span {
     @apply text-gray-3;
