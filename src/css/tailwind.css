@@ -33,4 +33,40 @@
   .section-heading {
     @apply text-6xl font-extrabold font-russo;
   }
+
+  .category {
+    @apply max-w-xl flex flex-col items-start mt-12 lg:mt-24 relative;
+  }
+
+  .category-title {
+    @apply flex rounded-md bg-white py-1 px-4 items-center shadow;
+  }
+
+  .category-title div {
+    @apply bg-blue w-1 h-5 inline-block mr-2;
+  }
+
+  .category-title h4 {
+    @apply font-russo text-lg;
+  }
+
+  .category h5 {
+    @apply text-sm mt-1 font-bold;
+  }
+
+  .category p {
+    @apply text-sm mt-3;
+  }
+
+  .category ul {
+    @apply text-sm mt-3 space-y-2;
+  }
+
+  .category ul li {
+    @apply flex items-center;
+  }
+
+  .category ul li div {
+    @apply bg-blue w-1 h-1 rounded-md inline-block mr-1.5;
+  }
 }
