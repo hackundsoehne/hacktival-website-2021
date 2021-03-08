@@ -25,32 +25,36 @@
 
 @layer components {
   #nav {
-    @apply fixed z-10 inset-x-6 top-2 px-6 flex flex-row justify-between items-center;
-    height: 72px;
+    @apply fixed z-30 inset-x-6 top-2 p-6 flex flex-col lg:flex-row lg:justify-between lg:items-center;
+    min-height: 72px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.5s ease;
   }
   #nav-indicator {
-    @apply absolute bg-blue-3 h-1 w-6;
+    @apply hidden lg:block absolute bg-blue-3 h-1 w-6;
     border-radius: 4px;
-    top: 50px;
+    top: 58px;
     left: 39.5px;
     transition: left 1s ease;
+  }
+  #nav-button {
+    @apply block lg:hidden;
   }
   .nav-with-bg {
     background-color: rgba(255, 255, 255, 0.75) !important;
   }
+  .nav-open {
+    @apply shadow-lg;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+  .nav-open .nav-item {
+    @apply flex !important;
+  }
   .nav-item {
-    @apply uppercase flex flex-row;
-  }
-  .nav-text {
-  }
-  .nav-logo {
-    @apply h-6 mx-2;
-  }
-  .nav-logo img {
-    @apply h-full;
+    @apply uppercase my-2 flex-row justify-center;
+    @apply hidden;
+    @apply lg:flex;
   }
   .nav-icon {
     @apply h-5;
@@ -60,6 +64,15 @@
   }
   .nav-icon img {
     @apply h-full;
+  }
+  .nav-logo {
+    @apply h-6 mx-2;
+  }
+  .nav-logo img {
+    @apply h-full;
+  }
+  .nav-head {
+    @apply flex flex-row justify-between order-first lg:order-none;
   }
 
   .section {

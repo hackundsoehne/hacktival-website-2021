@@ -62,11 +62,24 @@ function onScrollStop(callback) {
 }
 
 (function () {
+  const navEl = document.getElementById("nav");
+  const navButtonEl = document.getElementById("nav-button");
   const sectionTargetElements = document.querySelectorAll(".section-target");
   const sectionTargets = {};
+  var navOpen = false;
 
   sectionTargetElements.forEach((sectionTarget) => {
     sectionTargets[sectionTarget.id] = sectionTarget.offsetTop;
+  });
+
+  navButtonEl.addEventListener("click", function () {
+    navOpen = !navOpen;
+    console.log("CLICKED");
+    if (navOpen) {
+      navEl.classList.add("nav-open");
+    } else {
+      navEl.classList.remove("nav-open");
+    }
   });
 
   onScrollStop(function () {
