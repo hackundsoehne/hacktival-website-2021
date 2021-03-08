@@ -1,3 +1,7 @@
+function getScrollPosition() {
+  return document.documentElement.scrollTop || document.body.scrollTop;
+}
+
 function moveIndicator(hash) {
   const selector = `.nav-text[href="${hash}"]`;
   const navTextEl = document.querySelector(selector);
@@ -32,6 +36,18 @@ function focusSection(hash) {
   updateURLHash(hash);
 }
 
+function updateNavBg() {
+  const navEl = document.getElementById("nav");
+  const navRect = navEl.getBoundingClientRect();
+  const scrollPosition = getScrollPosition();
+  const navBottomOffset = navRect.bottom;
+  if (scrollPosition > navBottomOffset) {
+    navEl.classList.add("nav-with-bg");
+  } else {
+    navEl.classList.remove("nav-with-bg");
+  }
+}
+
 function onScrollStop(callback) {
   var isScrolling;
 
@@ -54,10 +70,9 @@ function onScrollStop(callback) {
   });
 
   onScrollStop(function () {
-    const scrollPosition =
-      document.documentElement.scrollTop || document.body.scrollTop;
-
+    const scrollPosition = getScrollPosition();
     var sectionTargetId = null;
+
     for (const [id, offset] of Object.entries(sectionTargets)) {
       if (offset <= scrollPosition) {
         sectionTargetId = id;
@@ -85,4 +100,6 @@ function onScrollStop(callback) {
       focusSection(hash);
     });
   });
+
+  onScrollStop(updateNavBg);
 })();
