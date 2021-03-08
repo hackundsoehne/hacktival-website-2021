@@ -40,7 +40,7 @@
     background: rgba(255, 255, 255, 0.75);
   }
   .nav-item {
-    @apply uppercase;
+    @apply uppercase flex flex-row;
   }
   .nav-text {
   }
@@ -52,6 +52,9 @@
   }
   .nav-icon {
     @apply h-5;
+  }
+  .nav-icon:not(:last-child) {
+    @apply mr-4;
   }
   .nav-icon img {
     @apply h-full;
