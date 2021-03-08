@@ -48,9 +48,8 @@ function updateNavBg() {
   }
 }
 
-function onScrollStop(callback) {
+function onScrollDone(callback) {
   var isScrolling;
-
   window.addEventListener(
     "scroll",
     function (event) {
@@ -61,16 +60,23 @@ function onScrollStop(callback) {
   );
 }
 
+function onResizeDone(callback) {
+  var isResizing;
+  window.addEventListener(
+    "resize",
+    function (event) {
+      window.clearTimeout(isResizing);
+      isResizing = setTimeout(callback, 70);
+    },
+    false
+  );
+}
+
 (function () {
   const navEl = document.getElementById("nav");
   const navButtonEl = document.getElementById("nav-button");
   const sectionTargetElements = document.querySelectorAll(".section-target");
-  const sectionTargets = {};
   var navOpen = false;
-
-  sectionTargetElements.forEach((sectionTarget) => {
-    sectionTargets[sectionTarget.id] = sectionTarget.offsetTop;
-  });
 
   navButtonEl.addEventListener("click", function () {
     navOpen = !navOpen;
@@ -80,24 +86,6 @@ function onScrollStop(callback) {
     } else {
       navEl.classList.remove("nav-open");
     }
-  });
-
-  onScrollStop(function () {
-    const scrollPosition = getScrollPosition();
-    var sectionTargetId = null;
-
-    for (const [id, offset] of Object.entries(sectionTargets)) {
-      if (offset <= scrollPosition) {
-        sectionTargetId = id;
-      }
-    }
-
-    const hash = "#" + sectionTargetId;
-    if (!sectionTargetId) {
-      return;
-    }
-
-    focusSection(hash);
   });
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -114,5 +102,30 @@ function onScrollStop(callback) {
     });
   });
 
-  onScrollStop(updateNavBg);
+  onResizeDone(function () {
+    const hash = window.location.hash;
+    if (hash) {
+      moveIndicator(hash);
+    }
+  });
+
+  onScrollDone(function () {
+    const scrollPosition = getScrollPosition();
+    var sectionTargetId = null;
+
+    sectionTargetElements.forEach((sectionTarget) => {
+      if (sectionTarget.offsetTop <= scrollPosition) {
+        sectionTargetId = sectionTarget.id;
+      }
+    });
+
+    const hash = "#" + sectionTargetId;
+    if (!sectionTargetId) {
+      return;
+    }
+
+    focusSection(hash);
+  });
+
+  onScrollDone(updateNavBg);
 })();
