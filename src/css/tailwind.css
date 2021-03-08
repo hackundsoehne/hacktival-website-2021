@@ -24,8 +24,44 @@
 }
 
 @layer components {
+  #nav {
+    @apply fixed z-10 inset-x-6 top-2 px-6 flex flex-row justify-between items-center;
+    height: 72px;
+    border-radius: 10px;
+  }
+  #nav-indicator {
+    @apply absolute bg-blue-3 h-1 w-6;
+    border-radius: 4px;
+    top: 50px;
+    left: 39.5px;
+    transition: left 1s ease;
+  }
+  .nav-with-bg {
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .nav-item {
+    @apply uppercase;
+  }
+  .nav-text {
+  }
+  .nav-logo {
+    @apply h-6 mx-2;
+  }
+  .nav-logo img {
+    @apply h-full;
+  }
+  .nav-icon {
+    @apply h-5;
+  }
+  .nav-icon img {
+    @apply h-full;
+  }
+
   .section {
-    @apply m-6 sm:mx-12 sm:my-32 p-6 sm:p-12 xl:p-20 rounded-xl;
+    @apply mx-6 mt-6 sm:mx-12 sm:mt-32 p-6 sm:p-12 xl:p-20 rounded-xl;
+  }
+  .section:last-child {
+    @apply mb-6 sm:mb-32;
   }
   .section-title {
     @apply uppercase text-lg;
