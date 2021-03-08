@@ -286,4 +286,18 @@
   .sponsors div:last-child {
     @apply hidden md:block;
   }
+
+  /* Footer */
+  .footer {
+    @apply bg-purple-1 px-12 py-3 flex flex-col lg:flex-row items-center justify-between;
+  }
+  .footer-brand {
+    @apply uppercase font-extrabold text-lg my-3;
+  }
+  .footer-legal {
+    @apply uppercase text-xl text-gray-1 my-3 order-last lg:order-none;
+  }
+  .footer-icons {
+    @apply flex flex-row items-center my-3 space-x-6;
+  }
 }
