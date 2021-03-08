@@ -32,6 +32,19 @@ function focusSection(hash) {
   updateURLHash(hash);
 }
 
+function onScrollStop(callback) {
+  var isScrolling;
+
+  window.addEventListener(
+    "scroll",
+    function (event) {
+      window.clearTimeout(isScrolling);
+      isScrolling = setTimeout(callback, 70);
+    },
+    false
+  );
+}
+
 (function () {
   const sectionTargetElements = document.querySelectorAll(".section-target");
   const sectionTargets = {};
@@ -40,7 +53,7 @@ function focusSection(hash) {
     sectionTargets[sectionTarget.id] = sectionTarget.offsetTop;
   });
 
-  window.onscroll = function () {
+  onScrollStop(function () {
     const scrollPosition =
       document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -52,16 +65,24 @@ function focusSection(hash) {
     }
 
     const hash = "#" + sectionTargetId;
-    const currentHash = window.location.hash;
-    if (hash === currentHash) {
+    if (!sectionTargetId) {
       return;
     }
 
     focusSection(hash);
-  };
+  });
 
-  window.onhashchange = function () {
-    const hash = window.location.hash;
-    focusSection(hash);
-  };
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const hash = this.getAttribute("href");
+
+      document.querySelector(hash).scrollIntoView({
+        behavior: "smooth",
+      });
+
+      focusSection(hash);
+    });
+  });
 })();
