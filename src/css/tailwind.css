@@ -24,6 +24,17 @@
 }
 
 @layer components {
+  /* Misc */
+  .apply-button {
+    @apply inline-block relative z-10 rounded-md bg-white border-yellow-2 border-2 leading-9 tracking-wider uppercase font-russo py-3 px-4;
+    box-shadow: 4px 4px 0px #f2c94c;
+    font-size: 22px;
+  }
+  .apply-button:hover {
+    background-color: #e5bb3b;
+  }
+
+  /* Navigation */
   #nav {
     @apply fixed z-30 inset-x-6 top-2 p-6 flex flex-col lg:flex-row lg:justify-between lg:items-center;
     min-height: 72px;
@@ -295,7 +306,7 @@
     @apply uppercase font-extrabold text-lg my-3;
   }
   .footer-legal {
-    @apply uppercase text-xl text-gray-1 my-3 order-last lg:order-none;
+    @apply uppercase text-center text-xl text-gray-1 my-3 order-last lg:order-none;
   }
   .footer-icons {
     @apply flex flex-row items-center my-3 space-x-6;

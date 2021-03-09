@@ -7,7 +7,7 @@
   </head>
 
   <body class="min-h-screen flex flex-col font-inter overflow-x-hidden">
-    <nav id="nav" class="nav-with-bg">
+    <nav id="nav">
       <a class="nav-item nav-text" href="#about">About</a>
       <a class="nav-item nav-text" href="#categories">Categories</a>
       <a class="nav-item nav-text" href="#agenda">Agenda</a>
@@ -42,8 +42,35 @@
     </nav>
 
     <main class="flex-1">
-      <div class="bg-purple h-64">
-        <!-- placeholder -->
+      <div class="bg-purple min-h-screen flex flex-col">
+        <section class="section flex-1 relative bg-white text-center">
+          <span class="inline-block mb-6 text-lg tracking-widest"
+            >START Hacking 2021 16th-18th April</span
+          >
+          <h1
+            class="relative z-10 uppercase text-4xl md:text-7xl lg:text-8xl font-russo"
+          >
+            Building Beyond<br />Borders
+          </h1>
+          <a class="apply-button mt-8" href="#">Apply now</a>
+
+          <img class="absolute -right-16 top-12" src="img/flow-round.png" />
+          <img class="absolute -left-16 top-64" src="img/flow-game.png" />
+          <img class="absolute -right-32 bottom-32" src="img/keyboard.png" />
+          <img
+            class="absolute right-16 lg:right-64 bottom-64"
+            src="img/cloud-2.png"
+          />
+          <img class="absolute left-12 -bottom-16" src="img/cloud.png" />
+          <img
+            class="absolute left-0 lg:left-48 bottom-2"
+            src="img/interface-computer.png"
+          />
+          <img
+            class="absolute hidden md:block -right-48 lg:right-16 -bottom-64"
+            src="img/rocket.png"
+          />
+        </section>
       </div>
 
       <div class="section-target" id="about"></div>
