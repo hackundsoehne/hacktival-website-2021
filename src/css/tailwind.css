@@ -93,9 +93,6 @@
     @apply mx-4 my-8 md:mx-12 md:my-24;
     @apply px-6 py-12 sm:py-28 md:px-12 lg:px-28;
   }
-  .section:last-child {
-    @apply mb-6 sm:mb-32;
-  }
   .section-title {
     @apply uppercase text-lg;
   }
@@ -305,6 +302,12 @@
 
   .sponsors div:last-child {
     @apply hidden md:block;
+  }
+
+  /* Kicker section */
+  .kicker {
+    @apply mb-0;
+    @apply -mt-8 md:-mt-24;
   }
 
   /* Footer */
