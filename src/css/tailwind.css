@@ -97,7 +97,8 @@
     @apply uppercase text-lg;
   }
   .section-heading {
-    @apply text-6xl font-extrabold font-russo;
+    @apply font-russo;
+    @apply text-3xl md:text-5xl lg:text-6xl;
   }
 
   /* Intro section */
