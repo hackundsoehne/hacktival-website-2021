@@ -92,6 +92,8 @@
     @apply rounded-xl;
     @apply mx-4 my-8 md:mx-12 md:my-24;
     @apply px-6 py-12 sm:py-28 md:px-12 lg:px-28;
+    @apply lg:mx-auto;
+    max-width: 1800px;
   }
   .section-title {
     @apply uppercase text-lg;
@@ -104,6 +106,12 @@
   /* Start section */
   .start {
     @apply mt-24;
+    @apply lg:mx-32;
+    max-width: none;
+  }
+
+  .sponsors-sec {
+    max-width: none;
   }
 
   .category {
