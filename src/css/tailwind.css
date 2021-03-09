@@ -36,7 +36,8 @@
 
   /* Navigation */
   #nav {
-    @apply fixed z-30 inset-x-6 top-2 p-6 flex flex-col lg:flex-row lg:justify-between lg:items-center;
+    @apply fixed z-30 top-2 p-6 flex flex-col lg:flex-row lg:justify-between lg:items-center;
+    @apply inset-x-4 md:inset-x-6;
     min-height: 72px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
@@ -86,8 +87,11 @@
     @apply flex flex-row justify-between order-first lg:order-none;
   }
 
+  /* Generic section */
   .section {
-    @apply mx-6 mt-6 sm:mx-12 sm:mt-32 p-6 sm:p-12 xl:p-20 rounded-xl;
+    @apply rounded-xl;
+    @apply mx-4 my-8 md:mx-12 md:my-24;
+    @apply px-6 py-12 sm:py-28 md:px-12 lg:px-28;
   }
   .section:last-child {
     @apply mb-6 sm:mb-32;
@@ -97,6 +101,11 @@
   }
   .section-heading {
     @apply text-6xl font-extrabold font-russo;
+  }
+
+  /* Intro section */
+  .intro {
+    @apply mt-24;
   }
 
   .category {
