@@ -6,7 +6,7 @@ module.exports = {
   purge: {
     content: ["./src/*.html"],
     options: {
-      safelist: ["nav-with-bg"]
+      safelist: ["nav-with-bg", "nav-open"]
     }
   },
   theme: {
