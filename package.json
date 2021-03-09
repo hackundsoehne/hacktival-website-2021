@@ -4,7 +4,7 @@
   "description": "Website for the Hacktival 2021",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "format": "prettier --write src/",
     "prepare": "husky install"
   },
