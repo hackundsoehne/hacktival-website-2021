@@ -3,7 +3,12 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ["./src/*.html"],
+  purge: {
+    content: ["./src/*.html"],
+    options: {
+      safelist: ["nav-with-bg"]
+    }
+  },
   theme: {
     fontFamily: {
       russo: "Russo One, sans-serif",
