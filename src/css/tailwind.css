@@ -101,8 +101,8 @@
     @apply text-3xl md:text-5xl lg:text-6xl;
   }
 
-  /* Intro section */
-  .intro {
+  /* Start section */
+  .start {
     @apply mt-24;
   }
 
