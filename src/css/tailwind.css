@@ -309,8 +309,18 @@
     @apply text-sm my-2;
   }
 
-  .sponsors div {
-    @apply w-20 h-20 sm:w-28 md:w-20 md:h-20 sm:h-28 lg:w-36 lg:h-36 rounded-xl p-4 flex items-center;
+  .sponsors div,
+  .sponsors a {
+    @apply w-20 h-20 sm:w-28 md:w-20 md:h-20 sm:h-28 lg:w-36 lg:h-36 rounded-xl p-2 lg:p-4 flex items-center;
+  }
+
+  .sponsors a {
+    @apply cursor-pointer;
+  }
+
+  .sponsors div.smol,
+  .sponsors a.smol {
+    @apply p-4 lg:p-8;
   }
 
   .sponsors div:last-child {
