@@ -92,8 +92,8 @@
     @apply rounded-xl;
     @apply mx-4 my-8 md:mx-12 md:my-24;
     @apply px-6 py-12 sm:py-28 md:px-12 lg:px-28;
-    @apply lg:mx-auto;
-    max-width: 1800px;
+    @apply 2xl:mx-auto;
+    max-width: 1500px;
   }
   .section-title {
     @apply uppercase text-lg;
@@ -262,7 +262,11 @@
   }
 
   .schedule h5 {
-    @apply mr-6;
+    @apply mr-6 w-12 block;
+  }
+
+  .schedule h5 span {
+    @apply text-xs;
   }
 
   .schedule article {
@@ -294,7 +298,7 @@
   }
 
   .schedule article .info {
-    @apply px-4 mb-4;
+    @apply px-4 mb-4 flex-1;
   }
 
   .schedule article h4 {
