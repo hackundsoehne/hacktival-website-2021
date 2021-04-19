@@ -4,7 +4,8 @@
   "description": "Website for the Hacktival 2021",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "copy": "mkdir -p dist && cp src/CNAME dist/CNAME",
+    "build": "parcel build src/index.html --public-url ./ && npm run copy",
     "format": "prettier --write src/",
     "prepare": "husky install"
   },
